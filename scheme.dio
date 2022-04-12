@@ -1,0 +1,116 @@
+<mxfile host="65bd71144e">
+    <diagram id="iWDvVaj283KHKBU8eduZ" name="Страница 1">
+        <mxGraphModel dx="1657" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="17" value="Модуль взимодействия с пользователем&lt;br&gt;user_interface.py" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+                    <mxGeometry x="-150" y="90" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="" style="edgeStyle=none;html=1;" parent="1" source="18" target="24" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="main.py&lt;br&gt;главная" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="420" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="" style="edgeStyle=none;html=1;" parent="1" source="20" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-110" y="10" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Модуль создания данных&lt;br&gt;create_data.py" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="90" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Модуль записи в файл&lt;br&gt;logger.py" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="90" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="" style="edgeStyle=none;html=1;" parent="1" source="23" target="18" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="button_click()" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="56" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1429" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="controller.py&lt;br&gt;контроллер" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="290" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="End" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="520" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 11px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42); display: inline; float: none;&quot;&gt;get_action()&lt;/span&gt;" style="endArrow=classic;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;" parent="1" source="52" target="23" edge="1">
+                    <mxGeometry x="-0.8333" relative="1" as="geometry">
+                        <mxPoint x="50" y="110" as="sourcePoint"/>
+                        <mxPoint x="130" y="320" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-50" y="335"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="22" target="23" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="30" y="320" as="sourcePoint"/>
+                        <mxPoint x="130" y="320" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="490" y="320"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="write_data_csv()" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="38" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="20" y="-50" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="21" target="23" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="30" y="320" as="sourcePoint"/>
+                        <mxPoint x="130" y="320" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="view_database()" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="1" connectable="0" vertex="1">
+                    <mxGeometry x="500" y="205" as="geometry">
+                        <mxPoint x="-13" y="20" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="change_contact()" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="1" connectable="0" vertex="1">
+                    <mxGeometry x="180" y="200" as="geometry">
+                        <mxPoint x="-4" y="19" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="delet_contact()" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="1" connectable="0" vertex="1">
+                    <mxGeometry x="180" y="230" as="geometry">
+                        <mxPoint x="-3" y="22" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="52" value="&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 11px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; display: inline ; float: none&quot;&gt;view_data()&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-90" y="190" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="" style="endArrow=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="17" target="52" edge="1">
+                    <mxGeometry x="-0.2857" relative="1" as="geometry">
+                        <mxPoint x="180" y="150" as="sourcePoint"/>
+                        <mxPoint x="180" y="290" as="targetPoint"/>
+                        <Array as="points"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" value="find_contact()" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="1" connectable="0" vertex="1">
+                    <mxGeometry x="170" y="160" as="geometry">
+                        <mxPoint x="-3" y="22" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="60" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="21" target="22" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="290" y="119.5" as="sourcePoint"/>
+                        <mxPoint x="390" y="119.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="61" value="contact()l" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="60" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
