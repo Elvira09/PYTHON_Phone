@@ -2,14 +2,11 @@
 import create_data
 
 # ДОДЕЛАТЬ:
-    # запись данных в xml -
-    # def write_data_xml():
-
     # запись данных в JSON 
     # def write_data_json():
 
-# # запись данных в csv
-def write_data_csv():   # можно позже добавить дату внесения записи
+# # запись данных 
+def write_data():   # можно позже добавить дату внесения записи
     database = create_data.contact()
     with open('PHONE/database_lower.csv', 'a') as file:
         file.write('\n')
@@ -19,6 +16,10 @@ def write_data_csv():   # можно позже добавить дату вне
         file1.write('\n')
         for key,val in database.items():
             file1.write('{}: {} - '.format(key,val))
+    with open('PHONE/database.xml', 'a', encoding='utf-8') as file2:
+        file2.write('\n')
+        for key, val in database.items():
+            file2.write('{}: {}\n'.format(key,val))              
 # f = write_data_csv()
 
 

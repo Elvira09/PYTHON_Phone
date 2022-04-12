@@ -7,9 +7,9 @@ import create_data
 
 def button_click():
     action = user_interface.get_action()
-    
+
     if action == 1:
-        result = logger.write_data_csv()
+        result = logger.write_data()
     elif action == 2:
         result = print('!НЕ ДОДЕЛАНО: вставить модуль  def find_contact() - \
             по поиску контакта') # create_data.find_contact() нужно сделать модуль с поиском и выбором контакта
