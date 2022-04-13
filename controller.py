@@ -11,8 +11,7 @@ def button_click():
     if action == 1:
         result = logger.write_data()
     elif action == 2:
-        result = print('!НЕ ДОДЕЛАНО: вставить модуль  def find_contact() - \
-            по поиску контакта') # create_data.find_contact() нужно сделать модуль с поиском и выбором контакта
+        result = create_data.find_contact()
     elif action == 3:
         result = print('!НЕ ДОДЕЛАНО: вставить модуль def change_contact() - \
             по изменению контакта') # create_data.change_contact() написать модуль по изменению контакта
