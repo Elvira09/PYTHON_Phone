@@ -13,7 +13,8 @@ def button_click():
     elif action == 2:
         result = logger.find_contact()
     elif action == 3:
-        result = print('!НЕ ДОДЕЛАНО: вставить функцию logger.change_contact() - изменение контакта') 
+        print('!НЕ ДОДЕЛАНО')
+        result = logger.change_contact()
     elif action == 4:
         result = print('!НЕ ДОДЕЛАНО: вставить модуль def delet_contact() - удаление контакта') 
     elif action == 5:

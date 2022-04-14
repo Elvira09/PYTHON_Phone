@@ -52,29 +52,50 @@ def find_contact():
     return contact
 # print(find_contact())
 
-
-
-
-# # СОЗДАТЬ ФУНКЦИЮ ПО ИЗМЕНЕНИЮ КОНТАКТА  
+# # НЕ ДОРАБОТАНО  
+# изменение контакта
 def change_contact():
-    change_contact = find_contact()
-    print(change_contact)
-    if change_contact != []:
-        choice = user_interface.get_action_change_contact()
-        if choice == 1:
-            result = create_data.get_name()
-        elif choice == 2:
-            result = create_data.get_surname()
-        elif choice == 3:
-            result = create_data.get_phone()
-        elif choice == 4:
-            result = create_data.get_mail()
-        elif choice == 5:
-            result = create_data.get_comment()
+    with open ('PHONE/database_line.csv', 'r') as file:
+        old_data = file.read()
+    with open ('PHONE/database_lower.csv', 'r') as file:
+        old_data = file.read()
+    with open ('PHONE/database.xml', 'r') as file:
+        old_data = file.read()
+    with open ('PHONE/database.json', 'r') as file:
+        old_data = file.read()
+
+    old = input('Введите позицию для изменения: ')
+    new = input('Введите новые данные: ')
+    new_data = old_data.replace(old, new)
+
+    with open ('PHONE/database_line.csv', 'w') as file:
+        file.write(new_data)
+    with open ('PHONE/database_lower.csv', 'w') as file:
+        file.write(new_data)
+    with open ('PHONE/database.xml', 'w') as file:
+        file.write(new_data)
+    with open ('PHONE/database.json', 'w') as file:
+        file.write(new_data)
+
+    # if change_contact != []:
+    #     choice = user_interface.get_action_change_contact()
+    #     if choice == 1:
+    #         result = create_data.get_name()
+    #     elif choice == 2:
+    #         result = create_data.get_surname()
+    #     elif choice == 3:
+    #         result = create_data.get_phone()
+    #     elif choice == 4:
+    #         result = create_data.get_mail()
+    #     elif choice == 5:
+    #         result = create_data.get_comment()
    
-    return change_contact
+    # return change_contact
 # print(change_contact())
 
 
 # # СОЗДАТЬ ФУНКЦИЮ ПО УДАЛЕНИЮ КОНТАКТА  
 # def delet_contact():
+
+
+
