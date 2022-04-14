@@ -1,6 +1,7 @@
 # 3. Модуль записи в файл и извлечения данных из файла
 import create_data
 import user_interface
+import json
 
 # # запись данных 
 def write_data():   # можно позже добавить дату внесения записи
@@ -55,24 +56,23 @@ def find_contact():
 
 
 # # СОЗДАТЬ ФУНКЦИЮ ПО ИЗМЕНЕНИЮ КОНТАКТА  
-# def change_contact():
-#     change_contact = find_contact()
-#     print(change_contact)
-#     if change_contact != []:
-#         choice = user_interface.get_action_change_contact()
-#         result = ''
-#         if choice == 1:
-#             result = create_data.get_name()
-#         elif choice == 2:
-#             result = create_data.get_surname()
-#         elif choice == 3:
-#             result = create_data.get_phone()
-#         elif choice == 4:
-#             result = create_data.get_mail()
-#         elif choice == 5:
-#             result = create_data.get_comment()
+def change_contact():
+    change_contact = find_contact()
+    print(change_contact)
+    if change_contact != []:
+        choice = user_interface.get_action_change_contact()
+        if choice == 1:
+            result = create_data.get_name()
+        elif choice == 2:
+            result = create_data.get_surname()
+        elif choice == 3:
+            result = create_data.get_phone()
+        elif choice == 4:
+            result = create_data.get_mail()
+        elif choice == 5:
+            result = create_data.get_comment()
    
-    # return change_contact
+    return change_contact
 # print(change_contact())
 
 
