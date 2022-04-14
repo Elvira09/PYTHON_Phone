@@ -1,4 +1,5 @@
 # 1. Модуль взимодействия с пользователем
+import create_data
 
 # вывод на консоль
 def view_data(data):
@@ -19,12 +20,20 @@ def get_action():
 	return choice
 # print(get_action())
 
-def get_action_find_contact(file):
+def get_action_find_contact():
 	choice = input('Введите параметр поиска:  ')
-	if not choice in file: 
-		choice = input('Параметр поиска введен некорретно, повторите попытку ')
+	print()
 	return choice
+# print(get_action_find_contact())
 
-
-
-
+def get_action_change_contact():
+	print('Изменить имя: 			нажмите 1\n'
+    	'Изменить фамилию: 		нажмите 2 \n'
+        'Изменить телефон: 		нажмите 3\n'
+        'Изменить электронную почту: 	нажмите 4\n'
+		'Изменить комментарий:  		нажмите 5\n')
+	choice = int(input('Выберите вариант: '))
+	if choice < 1 or choice > 5:
+		choice = int(input('Некорректный ввод, сделайте выбор повторно:  '))	
+	return choice
+# print(get_action_change_contact())

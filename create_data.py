@@ -1,11 +1,6 @@
 # 2. Модуль создания данных
 import uuid
 
-
-import user_interface
-
-
-
 def un_id():
     unid = int(uuid.uuid1())
     return unid
@@ -51,24 +46,4 @@ def contact():
 # print(contact())
 
 
-# # СОЗДАТЬ ФУНКЦИЮ ПО ИЗМЕНЕНИЮ КОНТАКТА  
-# def change_contact():
 
-# # СОЗДАТЬ ФУНКЦИЮ ПО УДАЛЕНИЮ КОНТАКТА  
-# def delet_contact():
-
- # СОЗДАТЬ  ФУНКЦИЮ  ПО ПОИСКУ КОНТАКТА  
-def find_contact():
-    file = open('PHONE/database_line.csv', 'r')
-    lst = []
-    for line in file:
-        find = user_interface.get_action_find_contact(file)
-
-        if find in line:
-            lst.append(line.split('-'))
-        # else:
-        #     print('Параметр поиска введен некорретно, повторите попытку ')
-    ls = '\n'.join(sum(lst, []))
-    return ls
-
-print(find_contact())

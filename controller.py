@@ -11,15 +11,13 @@ def button_click():
     if action == 1:
         result = logger.write_data()
     elif action == 2:
-        result = create_data.find_contact()
+        result = logger.find_contact()
     elif action == 3:
-        result = print('!НЕ ДОДЕЛАНО: вставить модуль def change_contact() - \
-            по изменению контакта') # create_data.change_contact() написать модуль по изменению контакта
+        result = print('!НЕ ДОДЕЛАНО: вставить функцию logger.change_contact() - изменение контакта') 
     elif action == 4:
-        result = print('!НЕ ДОДЕЛАНО: вставить модуль def delet_contact() - \
-            по удалению контакта') # create_data.delet_contact() написать модуль по удалению контакта
+        result = print('!НЕ ДОДЕЛАНО: вставить модуль def delet_contact() - удаление контакта') 
     elif action == 5:
-        result = logger.view_database() # показывает все контакты
+        result = logger.view_database() 
     
-    user_interface.view_data(result)
+    # user_interface.view_data(result)
 
